@@ -1,9 +1,7 @@
-# This Dockerfile is used to build the image available on DockerHub
-FROM busybox:latest
+FROM frolvlad/alpine-oraclejdk8:slim
 
-COPY pom.xml /opt
+ADD jenkins-test.jar /opt/jenkins-test.jar
 
 WORKDIR /opt
 
-
-CMD ["top"]
+ENTRYPOINT [ "sh", "-c", "java jenkins-test.jar" ]
