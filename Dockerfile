@@ -1,6 +1,6 @@
 FROM openjdk:8-jre
 
-ADD /var/lib/jenkins/workspace/jenkins-gitlab-build-image-test/jenkins-test.jar /opt/jenkins-test.jar
+ADD jenkins-test.jar /opt/jenkins-test.jar
 
 WORKDIR /opt
 
