@@ -115,7 +115,7 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-
+            <!--
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
@@ -136,7 +136,7 @@
                     </resources>
                 </configuration>
             </plugin>
-
+            -->
 
 
 
