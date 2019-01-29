@@ -1,6 +1,6 @@
 FROM openjdk:8-jre
 
-ADD jenkins-test.jar /opt/jenkins-test.jar
+ADD /target/jenkins-test.jar /opt/jenkins-test.jar
 
 WORKDIR /opt
 
